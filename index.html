@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 align = center>MY BLOG</h1>
+        <button onclick="showAddBlogForm()">Add Blog</button>
+    </header>
+
+    <section id="blog-list">
+        <!-- Blog posts will be displayed here -->
+    </section>
+
+    <!-- Add/Edit Blog Form -->
+    <div id="blog-form-container"><br><br>
+       <form id="blog-form">
+    <align=center label for="title">Title:</label>
+    <input type="text" id="title" name="title" placeholder="Enter the blog title"><br><br>
+
+    <align=center label for="description">Description:</label>
+    <input type="text" id="description" name="description" placeholder="Enter a short description"><br><br>
+
+    <align=center label for="content">Content:</label>
+    <textarea id="content" name="content" placeholder="Enter the blog content"></textarea><br><br>
+
+    <align=center label for="image">Image:</label>
+    <input type="file" id="image" name="image"><br><br>
+
+    <button type="submit" onclick="saveBlog(event)">Save Blog</button><br>
+</form>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

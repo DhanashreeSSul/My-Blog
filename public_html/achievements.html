@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Achievements</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+         html {
+        font-family: "Montserrat";
+        }
+        .container2 {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0;
+        /* background-color: #111; */
+        /* background-image: linear-gradient(90deg,rgb(187, 224, 255),rgb(188, 220, 237),rgb(9, 133, 200)) */
+        }
+        .timeline {
+        width: 80%;
+        height: auto;
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        }
+
+        .timeline .ul1 {
+        list-style: none;
+    
+        }
+        .timeline .ul1 .li1 {
+        padding: 20px;
+        /* background-color: #1e1f22; */
+        background-image: linear-gradient(90deg,rgb(187, 224, 255),rgb(188, 220, 237),rgb(9, 133, 200));
+        color: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        
+        }
+        .timeline .ul1 .li1:last-child {
+        margin-bottom: 0;
+        }
+        .timeline-content h1 {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        }
+        .timeline-content p {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+        }
+        .timeline-content .date {
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        }
+        @media only screen and (min-width: 768px) {
+        .timeline:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: rgb(8, 0, 0);
+        }
+        .timeline .ul1 .li1 {
+            width: 50%;
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .timeline .ul1 .li1:nth-child(odd) {
+            float: left;
+            clear: right;
+            transform: translateX(-36px);
+            border-radius: 20px 0px 20px 20px;
+        }
+        .timeline .ul1 .li1:nth-child(even) {
+            float: right;
+            clear: left;
+            transform: translateX(7px);
+            border-radius: 0px 20px 20px 20px;
+        }
+        .timeline .ul1 .li1::before {
+            content: "";
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: rgb(13, 13, 13);
+            top: 0px;
+        }
+        .timeline .ul1 .li1:nth-child(odd)::before {
+            transform: translate(50%, -50%);
+            right: -20px;
+        }
+        .timeline .ul1 .li1:nth-child(even)::before {
+            transform: translate(-50%, -50%);
+            left: -22.5px;
+        }
+        .timeline-content .date {
+            position: absolute;
+            top: -45px;
+        }
+        /* .timeline ul li:hover::before {
+            background-color: rgb(2, 80, 190);
+        } */
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-blue navbar-light sticky-top p-2 font-large">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <!-- <h2 class="m-0"><i class="fa fa-car text-primary me-2"></i>Drivin</h2> -->
+            <img src="img/acmw.png" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="https://india.acm.org/acm-w-india" target="_blank"  class="dropdown-item">ACM-W</a>
+                        <a href="about.html" class="dropdown-item">ACM-W PCCoE</a>
+                    </div>
+                </div>
+                <a href="events.html" class="nav-item nav-link">Events</a>
+                <a href="achievements.html" class="nav-item nav-link">Achievements</a>
+                <a href="team.html" class="nav-item nav-link">Team</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Achievements</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Achievements start -->
+    <div class="container2">
+        <div class="timeline">
+          <ul class="ul1">
+               <li class="li1">
+              <div class="timeline-content">
+                <h3 class="date" style="color: black;font-size: large;">17th Mar, 2024</h3>
+                <h1>Katalyst tech fest</h1>
+                <ul align="justify" style="list-style-type:square;">
+                    <li>Katalyst India is an award-winning NGO that stands for the economic empowerment of women. Their initiative prepares young women for leadership roles, thereby creating a wider talent pool for India Inc and helping bridge the gender divide.</li>
+                    <li>They have organised a tech fest consisting of specific events for specific year.</li>
+                    <li>Kanak and team have secured second position in Mini engineering project competition with a cash prize of Rs 5000.</li>
+                  </ul>
+            
+              </div>
+            </li>
+            <li class="li1">
+              <div class="timeline-content">
+                <h3 class="date" style="color: black;font-size: large;">13th Dec, 2023</h3>
+                <h1>ACM WINTER SCHOOL</h1>
+                <ul align="justify" style="list-style-type:square;">
+                    <li>ACM Winter School on Network Science- Theory and Applications</li>
+                    <li>Pranjali Deshpande and Aditi Dabhade selected to attend.</li>
+                    <li>Dates: 11th Dec to 20th Dec 2023</li>
+                    <li>Got opportunity to learn from experts in the field and network with peers</li>
+                  </ul>
+            
+              </div>
+            </li>
+            <li class="li1">
+              <div class="timeline-content">
+                <h3 class="date" style="color: black;font-size: large;">4th Dec, 2023</h3>
+                <h1>SMART INDIA HACKATHON</h1>
+                <ul align="justify" style="list-style-type:square;">
+                    <li> Smart India Hackathon: A National Initiative for Innovative Solutions</li>
+                    <li>Wafiya Mulla and her Team Selected in Final Round of SIH 2023 for the problem statement under Ministry of defence. </li>
+                    <li>KIT,Kolhapur Hosted the Prestigious Event</li>
+                    <li>Promoting Technology, Innovation, and Problem-Solving in India</li>
+                  </ul>
+ 
+              </div>
+            </li>
+            <li class="li1">
+              <div class="timeline-content">
+                <h3 class="date" style="color: black;font-size: large;">20th Sep, 2023</h3>
+                <h1>SMART INDIA HACKATHON</h1>
+                <ul align="justify" style="list-style-type:square;">
+                    <li> Smart India Hackathon: A National Level Event </li>
+                    <li>Madhura Abnave, Trupti Gunjal, and Vandana Solapure and their team selected at College Level Internal Round</li>
+                    <li>Impressive Performance in Internal Rounds</li>
+                    <li>Promoting Technology, Innovation, and Problem-Solving in India</li>
+                  </ul>
+
+
+              </div>
+            </li>
+            <li class="li1">
+              <div class="timeline-content">
+                <h3 class="date" style="color: black;font-size: large;">06th Aug, 2023</h3>
+                <h1>THE ALL INDIA WOMEN ONLY HACKATHON 23</h1>
+                <ul align="justify" style="list-style-type:square;">
+                    <li>Wafiya Mulla and Madhura Abnave successfully qualified in the abstract shortlisting round of the All India Women Only Hackathon 23. </li>
+                    <li>They participated in the event's finale, which was organized by Shooting Stars Foundation.</li>
+                    <li>
+                        The hackathon was sponsored by Persistent Foundation and supported by prominent corporate entities like IBM, TCS, Cognizant, Yes Bank, Persistent Systems, Citrix (Cloud Group), PayPal, and Genesys</li>
+                    <li>
+                        The hackathon aimed to encourage and empower women in the technology and innovation space.</li>
+                  </ul>
+               
+              </div>
+            </li>
+            <li class="li1">
+              <div class="timeline-content">
+                <h3 class="date" style="color: black;font-size: large;">29th Apr, 2023</h3>
+                <h1>GDSC WOW</h1>
+                <ul align="justify" style="list-style-type:square;">
+                    <li>GDSC WOW: Annual event by GDSC India, bringing together students to showcase innovative ideas and compete for top positions.</li>
+                    <li>Wafiya Mulla and her team Emerged as top 10 finalists among 3800 teams, showcasing exceptional skills and innovative thinking.</li>
+                    <li>24-hour hackathon: Intense event where participants implement and pitch unique solutions in 24 hours.</li>
+                    <li>Focus on unique solutions: Encourages participants to think out-of-the-box for potential industry transformations.</li>
+                    <li>Recognition and growth: Prestigious events like GDSC WOW offer networking, learning, and valuable experience for personal and professional development</li>
+
+                  </ul>
+                
+ 
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+
+
+
+    <!-- Achievements end -->
+
+
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-3">
+                    <h4 class="text-white mb-4">ACM-W PCCoE</h4>
+                    <p style="color: white;">Established in 2019. This chapter has been established with an aim to support and 
+                        motivate the women in computing, and thereby bring about gender equality in this field.</p>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="team.html">Team</a>
+                    <a class="btn btn-link" href="achievements.html">Achievements</a>
+                    <a class="btn btn-link" href="events.html">Events</a>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h4 class="text-light mb-4">Follow Us</h4>
+                    <div class="d-flex pt-2">
+                        <!--<a class="btn btn-square btn-outline-light me-1" href="acmw@pccoepune.org"><i class="fa fa-envelope"></i></a>-->
+                        <a class="btn btn-square btn-outline-light me-1" href="https://twitter.com/pccoeacmw" target="_blank" ><i class="fab fa-twitter" ></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href="https://www.instagram.com/pccoeacmw/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light me-0" href="https://www.linkedin.com/company/pccoeacmw/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                 <div class="col-lg-3 col-md-3">
+                    <h4 class="text-light mb-4">Contact Us</h4>
+                    <div class="d-flex pt-2">
+                        <i class="fa fa-envelope" > acmw@pccoepune.org</i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    Developed by Web-Tech Team | 
+                    copyrights &copy;2023 All Right Reserved.
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
